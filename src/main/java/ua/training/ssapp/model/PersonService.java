@@ -1,4 +1,4 @@
-package ua.training.sbt.model;
+package ua.training.ssapp.model;
 
 import java.util.LinkedList;
 import java.util.List;

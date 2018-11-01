@@ -1,4 +1,4 @@
-package ua.training.sbt.model;
+package ua.training.ssapp.model;
 
 /**
  * Entity class for conference participants representation.
