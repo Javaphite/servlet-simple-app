@@ -6,9 +6,19 @@ import java.util.List;
 /**
  * Service for {@link Person} entities manipulations.
  */
-public class PersonService {
+public final class PersonService {
 
-    private List<Person> participants = new LinkedList<>();
+    private static final PersonService INSTANCE = new PersonService();
+
+    private List<Person> participants;
+
+    private PersonService() {
+        participants = new LinkedList<>();
+    }
+
+    public static PersonService getInstance() {
+        return INSTANCE;
+    }
 
     /**
      * Adds new person to storage.
